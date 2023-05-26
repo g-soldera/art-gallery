@@ -41,35 +41,34 @@ containers.forEach((container) => {
 })
 
 // lazy loading
-const lazyImages = document.querySelectorAll('.lazy');
+const lazyImages = document.querySelectorAll(".lazy")
 
-if ('IntersectionObserver' in window) {
+if ("IntersectionObserver" in window) {
   const options = {
     root: null,
-    rootMargin: '0px', 
-    threshold: 0.1, 
-  };
+    rootMargin: "0px",
+    threshold: 0.1,
+  }
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        const lazyImage = entry.target;
+        const lazyImage = entry.target
 
-        lazyImage.src = lazyImage.dataset.src;
+        lazyImage.src = lazyImage.dataset.src
+        lazyImage.classList.add("loaded")
 
-        lazyImage.classList.remove('lazy');
-
-        observer.unobserve(lazyImage);
+        observer.unobserve(lazyImage)
       }
-    });
-  }, options);
+    })
+  }, options)
 
   lazyImages.forEach((lazyImage) => {
-    observer.observe(lazyImage);
-  });
+    observer.observe(lazyImage)
+  })
 } else {
   lazyImages.forEach((lazyImage) => {
-    lazyImage.src = lazyImage.dataset.src;
-    lazyImage.classList.remove('lazy');
-  });
+    lazyImage.src = lazyImage.dataset.src
+    lazyImage.classList.add("loaded")
+  })
 }
