@@ -11,7 +11,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
     <title>Absolute Gallery</title>
+    <meta
+      name="description"
+      content="Discover an immersive art gallery experience. Click to view stunning artworks in pop-up windows. Explore the world of creativity and inspiration."
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta
+      property="og:url"
+      content="https://github.com/g-soldera/art-gallery"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Absolute Gallery" />
+    <meta
+      property="og:description"
+      content="Discover an immersive art gallery experience. Click to view stunning artworks in pop-up windows. Explore the world of creativity and inspiration."
+    />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/attachments/1109870440945565726/1111628222036185098/portfolioopengraphabsolutegallery.png"
+    />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:width" content="300" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="gsoldera.dev" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/g-soldera/art-gallery"
+    />
+    <meta name="twitter:title" content="Absolute Gallery" />
+    <meta
+      name="twitter:description"
+      content="Discover an immersive art gallery experience. Click to view stunning artworks in pop-up windows. Explore the world of creativity and inspiration."
+    />
+    <meta
+      name="twitter:image"
+      content="https://cdn.discordapp.com/attachments/1109870440945565726/1111628222036185098/portfolioopengraphabsolutegallery.png"
+    />
   </head>
   <body>
     <header>
@@ -25,21 +67,24 @@
       <div class="model-1 grid">
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1575722290270-626b0208df99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1575722290270-626b0208df99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1585773816589-99af4e1711c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1585773816589-99af4e1711c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1501975558162-0be7b8ca95ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1501975558162-0be7b8ca95ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
@@ -48,7 +93,8 @@
       <div class="model-2 grid">
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1543053976-5fd9336b6de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1543053976-5fd9336b6de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
@@ -57,21 +103,24 @@
       <div class="model-3 grid">
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1529753253655-470be9a42781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1585511582331-14e7c5f89735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1585511582331-14e7c5f89735?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1614292264554-7dca1d6466d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1614292264554-7dca1d6466d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
@@ -80,28 +129,30 @@
       <div class="model-4 grid">
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1588088580711-1e49b3b12ee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1588088580711-1e49b3b12ee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1609602644879-dd158c2b56b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1609602644879-dd158c2b56b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
         <div class="container">
           <img
-            src="https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="lazy"
+            data-src="https://images.unsplash.com/photo-1603715749723-240c88df18b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt=""
           />
           <span>This is a text</span>
         </div>
       </div>
     </main>
-    <script src="script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -110,5 +161,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

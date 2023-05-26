@@ -289,3 +289,9 @@ main {
     gap: 0.6em;
   }
 }
+
+
+::selection {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}

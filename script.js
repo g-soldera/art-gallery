@@ -39,3 +39,37 @@ containers.forEach((container) => {
     document.body.appendChild(popupOverlay)
   })
 })
+
+// lazy loading
+const lazyImages = document.querySelectorAll('.lazy');
+
+if ('IntersectionObserver' in window) {
+  const options = {
+    root: null,
+    rootMargin: '0px', 
+    threshold: 0.3, 
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const lazyImage = entry.target;
+
+        lazyImage.src = lazyImage.dataset.src;
+
+        lazyImage.classList.remove('lazy');
+
+        observer.unobserve(lazyImage);
+      }
+    });
+  }, options);
+
+  lazyImages.forEach((lazyImage) => {
+    observer.observe(lazyImage);
+  });
+} else {
+  lazyImages.forEach((lazyImage) => {
+    lazyImage.src = lazyImage.dataset.src;
+    lazyImage.classList.remove('lazy');
+  });
+}
