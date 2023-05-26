@@ -62,12 +62,15 @@ img {
   gap: 2em;
 }
 
+.bot {
+  margin-bottom: 2em;
+}
+
 main {
   margin-left: 30em;
 
   display: flex;
   flex-direction: column;
-  gap: 2em;
 }
 
 .model-1 .container:nth-child(1) {
@@ -85,6 +88,10 @@ main {
 
 .horizontal img {
   aspect-ratio: 16/9;
+}
+
+.model-2 {
+  grid-template-rows: 1;
 }
 
 .model-2 .container:nth-child(1) {
@@ -234,7 +241,6 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2em;
   }
 
   .popup-content {
@@ -284,15 +290,13 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 0.6em;
   }
 
+  .bot {
+    margin-bottom: 0.6em;
+  }
   .grid {
     gap: 0.6em;
-  }
-
-  .model-2 {
-    margin-top: -0.6em;
   }
 }
 
@@ -301,7 +305,7 @@ main {
   color: var(--bg-color);
 }
 
-.grids {
+ {
   animation: 1s ease-out 0s 1 slideInFromTop;
 }
 
