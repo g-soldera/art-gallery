@@ -27,6 +27,11 @@ body {
   padding: 8.75em 8.38em 8.75em 6.88em;
 }
 
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 .mobileheader {
   display: none;
 }
