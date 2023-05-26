@@ -1,6 +1,6 @@
 # 🖼️ Absolute Gallery
 
-Absolute Gallery is a responsive website template designed to showcase a collection of stunning artworks in a visually appealing manner. With a user-friendly interface, it allows visitors to explore artworks and view them in pop-up windows by simply clicking on the images.
+Absolute Gallery is a responsive website template designed to showcase a collection of stunning artworks in a visually appealing manner. With a user-friendly interface, it allows visitors to explore artworks and view them in pop-up windows by simply clicking on the images. This project was carried out as a challenge from [Rocketseat](https://app.rocketseat.com.br).
 
 ## 🌐 Technologies
 
